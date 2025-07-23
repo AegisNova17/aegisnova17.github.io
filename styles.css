@@ -1,0 +1,97 @@
+/*Establishing font*/
+    h1, h2, h3, h4, ul, p {
+        font-family: "Lexend Deca";
+    }
+
+/*Typical and Legit Styling*/
+
+    p {
+        font-size: 16px;
+        opacity:50%;
+    }
+
+    h1 {
+        font-size: 56px;
+        opacity: 100%;
+
+        /**/
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    h2 {
+        text-indent: 40px;
+        line-height: 40px;
+        font-weight: 300;
+        
+        width: 33%;
+        padding-left: 160px;
+        padding-top: 36px;
+        padding-bottom: 18px;
+    }
+
+    /* Top 10 FACTS */
+    h3 {
+        display:block;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-top: 54px;
+        padding-bottom: 54px;
+
+        width: 45%;
+
+        background-color: aquamarine;
+
+        font-weight: 300;
+    }
+
+    /*Who, what, where*/
+    h4 {
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-top: 54px;
+        padding-bottom: 54px;
+
+        width: 45%;
+
+        line-height: 36px;
+
+        color: white;
+
+        font-weight: 300;
+    }
+
+    h3::first-line, h4::first-line {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .species {
+        background-image: url(images/ImageFolder/Dolphins.png);
+        background-size:cover;
+    }
+
+    .habitat {
+        background-image: url(images/ImageFolder/rivers\ and\ oceans.png);
+        background-size: contain;
+    }
+
+    .fwater {
+        background-image: url(images/ImageFolder/famous-rivers.png);
+        background-size: cover;
+    }
+
+
+/*Link Graphics*/
+    a:hover {
+        text-decoration: none;
+        color:aquamarine; 
+    }
+
+    a::after {
+        color: darkviolet;
+    }
+
+
