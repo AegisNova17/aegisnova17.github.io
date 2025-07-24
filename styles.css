@@ -1,8 +1,13 @@
 /*Establishing font*/
-    #basicID, h1, h2, h3, h4, ul, p, #porpoises {
+    #basicID, h1, h2, h3, h4, ul, p, #porpoises, .fwater, .tenFacts, .species, .habitat, .websiteHeader{
         font-family: "Lexend Deca";
 
-        animation: ease-in-out;
+        animation: textFade;
+        animation-timing-function: ease-in;
+        animation-fill-mode: both;
+
+        animation-timeline: view();
+        animation-range: 0vh 70vh;
     }
 
 /*Typical and Legit Styling*/
@@ -41,6 +46,19 @@
         padding-left: 25%;
     }
     
+
+    .DSimage-container img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .websiteHeader {
+        display: absolute;
+        text-align: center;
+        top: 500px;
+    }
+
     /* Top 10 FACTS */
     .tenFacts {
         display:block;
@@ -54,10 +72,11 @@
         background-color: aquamarine;
 
         font-weight: 200;
+        
+        position: relative;
+
 
         
-        /*animation: ease-in-out 1.5s infinite 0.125s 1 reverse none;*/
-        animation: 3s ease-in 1s 2 reverse both paused slide-in;
     }
 
     /*Who, what, where*/
@@ -130,9 +149,17 @@
         background-size: cover;
     }
 
+/*YAYYY Animation time 7/24/2025*/
+@keyframes flyInFromLeft {
+    0%   {left: -100%;}
+    50%  {left: -12.5%;}
+    100% {left: 2.5%;}
+}
 
-
-
+@keyframes textFade {
+    from {opacity: 0;}
+    to {opacity: 0 8rem;}
+}
 
 /*Grid setup*/
     #grid {
