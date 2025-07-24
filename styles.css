@@ -1,6 +1,8 @@
 /*Establishing font*/
-    h1, h2, h3, h4, ul, p {
+    #basicID, h1, h2, h3, h4, ul, p, #porpoises {
         font-family: "Lexend Deca";
+
+        animation: ease-in-out;
     }
 
 /*Typical and Legit Styling*/
@@ -11,7 +13,7 @@
     }
 
     h1 {
-        font-size: 56px;
+        font-size: 32px;
         opacity: 100%;
 
         /**/
@@ -21,49 +23,93 @@
         text-align: center;
     }
 
-    h2 {
+    #basicID {
         text-indent: 40px;
         line-height: 40px;
-        font-weight: 300;
+        font-size: 28px;
+        font-weight: 125x;
+
+        width: 120%;
         
-        width: 33%;
-        padding-left: 160px;
+        padding-left: 12.5%;
+        margin-right: 5%;
         padding-top: 36px;
         padding-bottom: 18px;
     }
 
+    #ballsID {
+        padding-left: 25%;
+    }
+    
     /* Top 10 FACTS */
-    h3 {
+    .tenFacts {
         display:block;
-        padding-left: 36px;
-        padding-right: 36px;
+        padding-left: 2.5%;
         padding-top: 54px;
         padding-bottom: 54px;
+        margin-right: 5%;
 
-        width: 45%;
+        width: 107.5%;
 
         background-color: aquamarine;
 
-        font-weight: 300;
+        font-weight: 200;
+
+        
+        /*animation: ease-in-out 1.5s infinite 0.125s 1 reverse none;*/
+        animation: 3s ease-in 1s 2 reverse both paused slide-in;
     }
 
     /*Who, what, where*/
-    h4 {
-        padding-left: 36px;
-        padding-right: 36px;
-        padding-top: 54px;
+    .species {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 12px;
         padding-bottom: 54px;
 
-        width: 45%;
 
         line-height: 36px;
 
         color: white;
 
-        font-weight: 300;
+        font-weight: 200;
     }
 
-    h3::first-line, h4::first-line {
+    .habitat {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 12px;
+        padding-bottom: 54px;
+
+
+        line-height: 36px;
+
+        color: white;
+
+        font-weight: 200;
+    }
+
+    .fwater {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 12px;
+        padding-bottom: 54px;
+
+
+        line-height: 36px;
+
+        color: white;
+
+        font-weight: 200;
+    }
+
+    #porpoises {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+        padding-top: 16px;
+    }
+
+    h3::first-line, h4::first-line, #porpoises::first-line {
         font-size: 32px;
         font-weight: 500;
     }
@@ -71,6 +117,7 @@
     .species {
         background-image: url(images/ImageFolder/Dolphins.png);
         background-size:cover;
+
     }
 
     .habitat {
@@ -83,6 +130,18 @@
         background-size: cover;
     }
 
+
+
+
+
+/*Grid setup*/
+    #grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "a c" "a d";
+    column-gap: 5%;
+    }
 
 /*Link Graphics*/
     a:hover {
