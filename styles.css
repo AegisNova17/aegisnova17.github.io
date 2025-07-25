@@ -7,7 +7,7 @@
         animation-fill-mode: both;
 
         animation-timeline: view();
-        animation-range: 0vh 70vh;
+        animation-range: 0vh 60vh;
     }
 
 /*Typical and Legit Styling*/
@@ -48,16 +48,32 @@
     
 
     .DSimage-container img {
-        position: relative;
+        display: inline-block;
         width: 100%;
         height: auto;
+        opacity: 50%;
     }
 
     .websiteHeader {
-        display: absolute;
-        text-align: center;
-        top: 500px;
+        position: absolute;
+        
+        top: 40vh;
+
+        padding-left: 25%;
+        padding-right: 25%;
+
+        display: inline-block;    
+        
+        font-weight: 250;
     }
+
+    .websiteHeader::first-line {
+        font-size: 200%;
+        font-weight: 300;
+    }
+
+
+
 
     /* Top 10 FACTS */
     .tenFacts {
