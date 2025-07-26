@@ -117,32 +117,71 @@
     #Firefly {
     font-size: 450%;
     font-weight: 200;
-    
-    /*
-    animation: fireflyText;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    */
+
 
     font-family: "Lexend Deca";
 
     margin-left: 0%;
     margin-top: 2.5%;
     padding-top: 2%;
-    padding-bottom: 5.5%;
+    padding-bottom: 2.5%;
     margin-bottom: 2.5%;
-    padding-left: 12.5%;
+    padding-left: 7%;
 
     background-color: rgb(60, 62, 82);
     }
 
-    #FireflyMain {
+    #FireflyBG {
+    background-image: url(images/ImageFolder/Firefly-for-SOM-website.jpg);
+    background-size: cover;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+
+
+    opacity: 75%;
+    }
+
+    #FFtext {
     background: linear-gradient(90deg, aquamarine, white, rgb(255, 235, 120), white, aquamarine);
     background-size: 300%;
     color: transparent;
     background-clip: text;
     animation: gradient-shift 2s infinite linear;
+
+    padding-left: 2.5%;
+    padding-top: 1%;
+
+    opacity: 100%;
+
+    text-align: center;
+    }
+
+    #FFcred {
+    background: linear-gradient(90deg, aquamarine, black, rgb(255, 235, 120), black, aquamarine);
+    background-size: 300%;
+    color: transparent;
+    background-clip: text;
+    animation: gradient-shift 2s infinite linear;
+
+    padding-bottom: 1%;
+
+    opacity: 100%;
+
+    text-align: center;
+    }
+
+    #anilist {
+    background: linear-gradient(90deg, aquamarine, black, rgb(255, 235, 120), black, aquamarine);
+    background-size: 300%;
+    color: transparent;
+    background-clip: text;
+    animation: gradient-shift 2s infinite linear;
+
+    text-decoration: underline;
+
+    opacity: 100%;
     }
 
     .credGrid {
